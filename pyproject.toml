@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-agent-auditor"
+version = "0.1.0"
+description = "Automated Security Assessment Framework for Autonomous AI Agents using Google Gemini API."
+readme = "README.md"
+authors = [{ name = "AI Agent Auditor Security Team" }]
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0.0",
+    "httpx>=0.24.0",
+    "click>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.20.0",
+]
+
+[project.scripts]
+agent-auditor = "ai_agent_auditor.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
