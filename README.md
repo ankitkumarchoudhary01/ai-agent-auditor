@@ -137,6 +137,18 @@ python -m ai_agent_auditor.cli audit --address agent1qvulnerable_demo_001 --auto
 
 ---
 
+## 🌐 Agentverse Deployment
+
+To deploy and publish this agent on **Fetch.ai Agentverse** as an autonomous cloud or mailbox service, see the step-by-step guide:
+👉 **[AGENTVERSE_GUIDE.md](AGENTVERSE_GUIDE.md)**
+
+Supports:
+- **Agentverse Cloud IDE**: Zero-configuration cloud hosting on `agentverse.ai`
+- **Agentverse Mailbox**: Secure tunneling from local runtime without open public ports
+- **DeltaV & Agent-to-Agent communication**: Accepts `AuditRequest` and replies with `AuditResponse` over Fetch.ai Almanac network.
+
+---
+
 ## 🐍 Python SDK API Usage
 
 ```python
